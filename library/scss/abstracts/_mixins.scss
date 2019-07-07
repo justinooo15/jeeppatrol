@@ -1,0 +1,53 @@
+// BREAKPOINTS
+@mixin bp($point) {
+  @if $point == alpha {
+    @media (min-width: 544px) { @content; }
+  }
+  @else if $point == beta {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $point == gamma {
+    @media (min-width: 992px)  { @content; }
+  }
+  @else if $point == delta {
+    @media (min-width: 1200px)  { @content; }
+  }
+  @else {
+    @media (min-width: $point)  { @content; }
+  }
+}
+
+@mixin center-flex {
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(center);
+}
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+  // For Google Chrome
+  ::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+  }
+
+  ::-webkit-scrollbar-track {
+      background: $background-color;
+  }
+
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}

@@ -1,0 +1,711 @@
+body{
+	background-color: #343a40;
+}
+.container{
+	margin-bottom:50px;
+
+	@include bp(beta) {
+		margin-bottom:50px;
+
+			}
+	@include bp(gamma) {
+		margin-bottom:50px;
+	
+		}
+	@include bp(delta) {
+		margin-bottom:50px;
+	
+		}
+}
+
+.homepage{
+	margin-top:0px;
+
+	@include bp(beta) {
+		margin-top: 10px;
+
+			}
+			/* 
+	@include bp(gamma) {
+		margin-top: 0px;
+	
+		}
+	@include bp(delta) {
+		margin-top: 0px;
+	
+		} */
+}
+
+
+.forgot{
+
+	&__head{
+		background-color: #DDDDDD;
+		padding: 10px;
+		border-radius: 10px 10px 0px 0px;
+	}
+
+	&__text{
+		font-weight: bold;
+	}
+
+	&__body{
+		background-color: white;
+		padding: 15px;
+		border-radius: 0 0 10px 10px;
+	}
+
+	&__input{
+		margin-bottom: 10px;
+	}
+}
+
+
+.tab{
+	background-color:#dddddd;
+
+	&__link{
+		background-color: white;
+		color: black;
+
+		&:active{
+			background-color: #DDDDDD;
+			color: black;
+		}
+	}
+}
+
+.user{
+
+	&__header{
+			padding: 5px 0px 5px;
+			background-color: #dddddd;
+			text-align: center;
+
+			h4{
+			padding: 0px 30px 0px;
+			text-align: center;
+			font-weight: 700;
+			}
+
+		}
+
+	&__feed{
+		text-align: left;
+		@include size(100% auto);
+	}
+
+
+	&__mobile{
+		background-color: $white;
+		padding: 10px;
+
+		&__head{
+			font-size: 2.3rem;
+			font-weight: bold;
+			text-align: center;
+			background-color: #DDDDDD;
+			padding: 20px;
+		}
+
+		&__contain{
+			text-align: left;
+		}
+
+		&__subhead{
+			font-weight: bold;
+		}
+
+		&__line{
+		height: 1px;
+	    width: 100%;
+	    margin: 20px 0;
+	    background-color: gray;
+		}
+
+	}
+
+	
+
+	&__post {
+		
+		&--header{
+		    border-radius: 10px 10px 0px 0px;
+			background-color: #DDDDDD;
+			padding: 5px 0px 5px;
+
+			h3{
+			padding: 0px 30px 0px;
+			text-align: left;
+			font-weight: bold;
+			}
+
+		}
+		
+		
+		&--field{
+			background-color: white;
+			padding: 20px 20px;
+			border-radius: 0px 0px 10px 10px;
+
+			&--head{
+				@include size(100% auto);
+				background-color: #dddddd;
+				text-align: center;
+			}
+
+			&--top{
+				padding: 10px;
+				margin-bottom: 10px;
+			}
+
+			h3{
+				color: black;
+			}
+			select{
+				margin-bottom: 10px;
+			}
+
+			textarea{
+				@include size(100% auto);
+				padding: 20px 20px;
+				resize:none;
+			}
+			button{
+				margin-top: 20px;
+			}
+
+			.check{
+				@include size(100% auto);
+				text-align: left;
+			}
+
+			&--chkbox{
+				padding:0px
+			}
+		}
+
+		&__image{
+			img{
+				@include size(100% auto);
+				object-fit: cover;			
+			}
+		}
+
+
+	}
+
+	
+
+	&__line{
+		height: 1px;
+	    width: 100%;
+	    margin: 20px 0;
+	    background-color: gray;
+	}
+	
+	
+	&__com{
+		background-color: #f5f5f5;
+		padding-top: 10px;
+
+
+
+		&--images{
+			margin:0px;
+				img{
+					@include size(50px auto);
+					border: 1px solid white;
+					object-fit: cover;
+					padding-left: 0px;
+
+						@include bp(beta) {
+							@include size(100% auto);
+							border: 1px solid white;
+							object-fit: cover;
+
+						}
+						@include bp(gamma) {
+							@include size(50px auto);
+							border: 1px solid white;
+							object-fit: cover;
+					
+						}
+						@include bp(delta) {
+							@include size(50px auto);
+							border: 1px solid white;
+							object-fit: cover; 
+							
+						}
+			}
+		}
+		
+		&--name{
+			color:black;
+			margin-left: 20px;
+			line-height: 90%;
+
+			h5{
+				float:left;
+				color:black;
+				font-size: 10px;
+
+				@include bp(beta) {
+					font-size:10px;
+					margin-top: 0px; 
+
+					}
+				@include bp(gamma) {
+					font-size:15px;
+				
+					}
+				@include bp(delta) {
+					font-size:15px; 
+						
+					}
+				}
+			p{
+				font-weight: 200;
+				color: black;
+				float:left;
+				font-size: 10px;
+
+				@include bp(beta) {
+					font-size:10px; 
+
+					}
+				@include bp(gamma) {
+					font-size:15px;
+				
+					}
+				@include bp(delta) {
+					font-size:15px; 
+						
+					}
+			}
+		}
+
+		&--details{
+			color: black;
+			text-align:left;
+			padding: 10px 0px;
+
+
+			p{
+				padding-left: 0px;
+
+				@include bp(beta) {
+					padding-left: 10px; 
+
+					}
+				@include bp(gamma) {
+					padding-left: 20px;
+				
+					}
+				@include bp(delta) {
+					padding-left: 25px; 
+						
+					}
+				}
+
+
+			}
+
+			
+
+			&--line{
+					height: 1px;
+				    width: 100%;
+				    margin: 5px 0;
+				    background-color: white;
+					}
+
+				textarea{
+					@include size(100% auto);
+					margin: 10px 0px ;
+					resize:none;
+					}
+
+				button{
+					margin: 5px 0px;
+					padding: 10px 10px;
+				}
+
+			&--btn{
+				float:left;
+				margin-left: 0px;
+			}
+
+		}
+
+	&__comments{
+		background-color: #dddddd;
+		border-top: 1px solid white;
+		border-radius: 0px 0px 10px 10px;
+		padding-top: 10px;
+
+
+		&--images{
+			margin:0px;
+				img{
+					@include size(50px auto);
+					border: 1px solid white;
+					object-fit: cover;
+					padding-left: 0px;
+
+						@include bp(beta) {
+							@include size(100% auto);
+							border: 1px solid white;
+							object-fit: cover;
+
+						}
+						@include bp(gamma) {
+							@include size(50px auto);
+							border: 1px solid white;
+							object-fit: cover;
+					
+						}
+						@include bp(delta) {
+							@include size(50px auto);
+							border: 1px solid white;
+							object-fit: cover; 
+							
+						}
+			}
+		}
+		
+		&--name{
+			color:white;
+			margin-left: 20px;
+			line-height: 90%;
+
+			h5{
+				float:left;
+				font-size: 10px;
+
+				@include bp(beta) {
+					font-size:15px;
+
+
+					}
+				@include bp(gamma) {
+					font-size:15px;
+				
+					}
+				@include bp(delta) {
+					font-size:18px; 
+						
+					}
+				}
+			p{
+				font-weight: 200;
+				color: white;
+				float:left;
+				font-size: 10px;
+
+				@include bp(beta) {
+					font-size:15px; 
+
+					}
+				@include bp(gamma) {
+					font-size:15px;
+				
+					}
+				@include bp(delta) {
+					font-size:18px; 
+						
+					}
+			}
+		}
+
+		&--details{
+			color: white;
+			text-align:left;
+			padding: 10px 0px;
+
+
+			}
+
+			&--line{
+					height: 1px;
+				    width: 100%;
+				    margin: 5px 0;
+				    background-color: white;
+					}
+
+				textarea{
+					@include size(100% auto);
+					margin: 10px 0px ;
+					resize:none;
+					}
+
+				button{
+					margin: 5px 0px;
+					padding: 10px 10px;
+				}
+
+			&--btn{
+				float:left;
+				margin-left: 0px;
+			}
+
+		}
+
+	&__feedback{
+		background-color:white;
+		padding:30px 10px 20px;
+		border-bottom: 1px solid #DDDDDD;
+		border-radius: 10px ;
+
+		&--body{
+			padding:15px;
+			background-color: #dddddd;
+
+			&--image{
+				
+				img{
+					@include size(100% auto);
+					object-fit: cover;
+				}
+			}
+
+			&--content{
+
+				h5{
+					text-align: left;
+				}
+
+				p{
+					text-align: left;
+				}
+
+			}
+		}
+
+		
+	}
+
+	&__report{
+		background-color:white;
+		padding:10px;
+		border-radius: 10px ;
+
+		&--body{
+			padding:15px;
+			background-color: #dddddd;
+
+			&--image{
+				
+				img{
+					@include size(100% auto);
+					object-fit: cover;
+				}
+			}
+
+			&--content{
+
+				h5{
+					text-align: left;
+				}
+
+				p{
+					text-align: left;
+				}
+
+			}
+		}
+
+		
+	}		
+	
+	&__viewpost{
+		background-color:white;
+		padding:30px 10px 20px;
+		border-bottom: 1px solid #DDDDDD;
+		border-radius: 10px 10px 0px 0px;
+		margin-top: 20px;
+
+		
+		&--images{
+			margin:0px;
+
+				img{
+					@include size(50px auto);
+					border: 1px solid gray;
+					object-fit: cover;
+
+
+						@include bp(beta) {
+							@include size(100% auto);
+							border: 1px solid gray;
+							object-fit: cover;
+
+						}
+						@include bp(gamma) {
+							@include size(50px auto);
+							border: 1px solid gray;
+							object-fit: cover;
+					
+						}
+						@include bp(delta) {
+							@include size(50px auto);
+							border: 1px solid gray;
+							object-fit: cover; 
+							
+						}
+			}
+		}
+		
+		&--name{
+			color:black;
+			margin-left: 20px;
+			line-height: 90%;
+
+			h4{
+				float:left;
+				font-size: 10px;
+
+				@include bp(beta) {
+					margin-top: 0px;
+					font-size:10px; 
+
+					}
+				@include bp(gamma) {
+					font-size:15px;
+				
+					}
+				@include bp(delta) {
+					font-size:18px; 
+						
+					}
+				}
+			p{
+				font-weight: 200;
+				color: black;
+				float:left;
+				font-size: 10px;
+
+				@include bp(beta) {
+					font-size:10px; 
+
+					}
+				@include bp(gamma) {
+					font-size:15px;
+				
+					}
+				@include bp(delta) {
+					font-size:18px; 
+						
+					}
+			}
+		}
+
+		&--details{
+			color: black;
+			text-align:left;
+			padding: 20px 0px;
+
+			@include bp(beta) {
+				padding:20px 0px;
+
+					}
+			@include bp(gamma) {
+				padding:20px 20px;
+			
+				}
+			@include bp(delta) {
+				padding:20px 20px;
+	
+				}
+
+
+			}
+
+		
+		}
+}
+
+.jeep{
+	border-radius: 10px 10px 10px 10px;
+	padding: 5px 0px 5px;
+	text-align:center;
+	margin-right: 0px;
+		
+		@include bp(beta) {
+			margin-right: 20px;
+
+				}
+		@include bp(gamma) {
+			margin-right: 20px;
+		
+			}
+		@include bp(delta) {
+			margin-right: 20px;
+	
+			}
+	&__header{
+		background-color: #dddddd;
+		border-radius: 10px 10px  0px  0px;
+		@include size(100% auto);
+		padding: 5px;
+		h4{
+				padding: 0px 30px 0px;
+				font-weight: bold;
+			}
+	}
+
+	&__body{
+		background-color: white;
+		border-radius:  0px  0px 10px 10px;
+		@include size(100% auto);
+		padding:10px;
+		ul{
+			li{
+				
+				text-align: center;
+				
+			}
+		}
+	}
+}
+
+.sched{
+	background-color: white;
+	padding:15px;
+
+	label{
+		padding-top: 15px;
+	}
+}
+
+.addhead{
+	background-color: #dddddd;
+	padding:10px;
+}
+.add{
+	background-color: white;
+	padding:15px;
+	border-radius:  0px  0px 10px 10px;
+
+	form{
+
+		label{
+			text-align: left;
+		}
+	}
+}
+
+.list{
+	background-color: white;
+	padding:15px;
+	border-radius:  0px  0px 10px 10px;
+}
+
+
+.viohide{
+	float:left;
+
+	a{
+		text-decoration: none;
+	}
+}

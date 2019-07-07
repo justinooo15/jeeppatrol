@@ -1,0 +1,21 @@
+.site-header {
+	@include size(100% 65px);
+	top: 0px;
+	background-color: $white;
+	position: fixed;
+	z-index: 10000;
+}
+
+.logo{
+	&__images{
+		@include size(50px auto);
+		float: left;
+		margin: 5px 10px
+	}
+
+	&__text{
+		@include size(200px auto);
+		float: left;
+		margin: 20px 3px;
+	}
+}

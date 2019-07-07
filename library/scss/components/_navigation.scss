@@ -1,0 +1,32 @@
+.site-nav {
+	float: right;
+
+	&__list { //ul
+		margin: 0;
+		@extend .cf;
+	}
+
+	&__item { //li
+		float: left;
+
+		form{
+			margin-top: 10px;
+		}
+	}
+
+	&__link { //a
+		display: block;
+		@include size(auto 60px);
+		@include center-flex;
+		border-bottom: 4px solid transparent;
+		padding: 0 10px;
+		color: $gray-700;
+
+		&:hover, &:focus, &:active {
+			border-bottom: 4px solid $blue;
+			text-decoration: none;
+			color: $gray-700;
+		}
+	}
+
+}

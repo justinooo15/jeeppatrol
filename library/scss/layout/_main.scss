@@ -1,0 +1,375 @@
+html {
+  min-height: 100%;
+  body {
+    margin-bottom: 60px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #a5a5a5;
+    .footer-block {
+      margin: 20px 0;
+    }
+  }
+}
+
+.container{
+	margin-top:90px;
+	text-align: center;
+	padding: 0px;
+	
+			@include bp(beta) {
+		    	margin-top: 100px;
+
+			}
+			@include bp(gamma) {
+		    	margin-top: 100px;
+
+			}
+			@include bp(delta) {
+		    	margin-top: 100px;
+
+			}				
+}
+
+.verify{
+	background-color: $white;
+	padding: 10px;
+
+	&__img{
+		@include size(100% auto);
+	}
+
+	&__text{
+		font-size: 35px;
+		font-weight: bold;
+	}
+}
+
+.logback {
+		background-image: url('/library/images/loginback.jpg');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+}
+
+.admin{
+	background-color: #286594;
+}
+
+
+
+.login{
+	text-align: left;
+		
+		&__lbel{
+		text-align: left;
+		color: white;
+		}
+
+		&__contain{
+    		height:100%;
+			float:none;
+			border: 2px solid #a1a1a1;
+		    background-color: black;
+		    border-radius: 0px 0px 10px 10px;
+		    background: rgba(17, 3, 13, 0.7);
+    	
+
+
+		&--sidetext{
+			color:white;
+			margin-top: 50px;
+
+			h1{
+				color: white;
+				font-weight: 600;
+				font-size: 50px;
+
+				@include bp(beta) {
+			    	color: white;
+					font-weight: 600;
+					font-size: 50px;
+
+				}
+				@include bp(gamma) {
+			    	color: white;
+					font-weight: 600;
+					font-size: 50px;
+
+				}
+				@include bp(delta) {
+			    	color: white;
+					font-weight: 600;
+					font-size: 50px;
+
+				}
+			}
+
+		}	
+	
+
+    	
+
+		&--logo{
+			margin: 20px 0px;
+			img{
+				@include size(100% auto);
+				object-fit: cover;
+			}
+		}	
+
+		&--header{
+		padding:30px 0px 30px;
+
+			h1{
+				color: white;
+				font-weight: 600;
+				font-size: 30px;
+
+				@include bp(beta) {
+			    	color: white;
+					font-weight: 600;
+					font-size: 30px;
+
+				}
+				@include bp(gamma) {
+			    	color: white;
+					font-weight: 600;
+					font-size: 30px;
+
+				}
+				@include bp(delta) {
+			    	color: white;
+					font-weight: 600;
+					font-size: 30px;
+
+				}
+			}
+
+			p{
+				color: white;
+			}
+	}
+
+		&--userlog{
+
+			input{
+				font-size:20px;
+			}
+
+			&--userinfo{
+				color: black;
+				margin-bottom: 10px;
+			    border-radius: 4px;
+
+				a{
+					margin-bottom: 20px;
+				}
+
+			}
+		}
+	}
+
+}
+
+.btn{
+	margin-bottom: 15px;
+}
+
+.signup{
+	height:100%;
+	float:none;
+	border: 2px solid #a1a1a1;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(17, 3, 13, 0.7);
+    text-align: left;
+    	.btn{
+    		margin-bottom: 20px;
+    	}
+
+    	&__lbel{
+		text-align: left;
+		color: white;
+		}
+
+		&__logo{
+			margin: 20px 0px;
+			img{
+				@include size(100% auto);
+				object-fit: cover;
+			}
+		}	
+
+		&__header{
+		padding:10px 0px 10px;
+
+			h1{
+				color: white;
+				font-weight: 600;
+			}
+
+			p{
+				color: white;
+			}
+	}
+
+		&__userlog{
+
+			input{
+				font-size: 20px;
+			}
+
+			&--userinfo{
+				background-color: white;
+				font-size: 20px;
+				color: black;
+				margin-bottom: 20px;
+			    border-radius: 4px;
+			}
+
+			.btn{
+				margin-bottom: 10px;
+			}
+		}
+
+}
+
+//main mune//
+.site-header{
+	.site__nav{
+			@include size(100% 50px);
+			top: 0px;
+			background-color: $white;
+			position: fixed;
+			z-index: 10000;
+			border-bottom: 1px solid $gray;
+	}
+}
+
+
+.jeep-prof {
+    position: relative;
+    margin-bottom: 50px;
+    border: 0;
+    border-color: transparent;
+
+
+	&__caption {
+	    position: absolute;
+	    top: 40%;
+	    left: 0;
+	    width: 100%;
+	}
+}
+
+
+table{
+
+	td{
+		text-align: left;
+	}
+}
+
+.mdal{
+	margin-top: 80px;
+
+	&__image{
+
+		img{
+			@include size(100% auto);
+		}
+	}
+}
+.mdlpost{
+	
+	&__img{
+		
+		img{
+			@include size(100% auto);
+			object-fit: cover;
+		}
+	}
+
+	&__content{
+
+		&--img{
+
+			img{
+				@include size(100% auto);
+			}
+		}
+
+		label{
+			font-weight: bold;
+		}
+	}
+
+}
+
+.use{
+	margin-top: 50px
+}
+
+table{
+
+	thead{
+		background-color: #dddddd;
+	}
+
+	tbody{
+		background-color: white;
+	}
+}
+
+
+.tdata{
+
+	p{
+		float: left;
+		padding:5px;
+		display: inline;
+	}
+}
+
+.status{
+
+	&__header{
+		background-color: #dddddd;
+		padding:10px;
+		border-radius: 10px 10px 0px 0px;
+
+		h1{
+			font-weight: bold;
+		}
+	}
+
+	&__body{
+		background-color: white;
+		padding:50px;
+		text-align: left;
+		border-radius: 0px 0px 10px 10px;
+
+		&--chart{
+
+			img{
+				@include size(100% auto);
+			}
+		}
+	}
+}
+
+.editstat{
+	color:#000000;
+		&__foot{
+			color: #000000;
+		}
+
+		label{
+			color: #000000;
+		}
+}

@@ -1,0 +1,29 @@
+.page-wrap {
+	@include size(100% auto);
+	margin: 50px 0 0;
+	position: relative;
+	float: left;
+	overflow: hidden;
+}
+
+.page {
+	@include size(100% 1000px);
+	background-color: $gray-500;
+	position: relative;
+
+	@include transform(translateX(0));
+	@include transition(transform 0.4s ease-in-out);
+
+	&--toggled {
+		@include transform(translateX(-300px));
+	}
+}
+
+.test-block {
+	height: 200px;
+	background-color: $blue;
+
+	@include bp(beta) {
+		
+	}
+}
